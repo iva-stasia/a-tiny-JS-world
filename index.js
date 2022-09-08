@@ -45,14 +45,14 @@ const catWomen = {
    saying: cat.saying
 };
 
-const inhabitants = [dog, cat, women, man, catWomen]
-const inhabitantsKeys = ['species', 'name', 'gender', 'legs', 'hands', 'saying']
-const inhabitantsInfo = []
+const inhabitants = [dog, cat, women, man, catWomen];
+const inhabitantsKeys = ['species', 'name', 'gender', 'legs', 'hands', 'saying'];
+const inhabitantsInfo = [];
 
 inhabitants.map(inhabitant => {
    inhabitantsInfo.push(
       [inhabitantsKeys.map(key => inhabitant[key]).join('; ')]
    )
-})
+});
 
-inhabitantsInfo.forEach(inhabitantInfo => print(inhabitantInfo))
+inhabitantsInfo.forEach(inhabitantInfo => print(inhabitantInfo));
